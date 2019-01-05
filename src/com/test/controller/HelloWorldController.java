@@ -12,7 +12,8 @@ public class HelloWorldController implements Controller{
 	public ModelAndView handleRequest(HttpServletRequest arg0, HttpServletResponse arg1) throws Exception {
 		// TODO Auto-generated method stub
 		System.out.println("=======springmvc======");
-		return new ModelAndView("helloWorld");
+		String result = "参数";
+		return new ModelAndView("helloWorld","result",result);
 	}
 
 }
