@@ -8,6 +8,8 @@
 </head>
 <body>
 springmvc欢迎你！
-<h2>${result }</h2>
+<hr>
+<h2>传递参数</h2>
+${result }
 </body>
 </html>
