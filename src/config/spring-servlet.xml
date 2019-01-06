@@ -12,4 +12,12 @@
 		<property name="prefix" value="/"/>
 		<property name="suffix" value=".jsp"/>
 	</bean>
+	<bean id="paramMethodResolver" class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver">
+		<property name="paramName" value="action"></property>
+	</bean>
+	<bean name="/test/multi" class="com.test.controller.MultiController">
+		<property name="methodNameResolver">
+			<ref bean="paramMethodResolver"/>
+		</property>
+	</bean>
     </beans>
