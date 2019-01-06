@@ -21,4 +21,10 @@ public class MultiController extends MultiActionController {
 		String method = "update";
 		return new ModelAndView("multi","method",method);
 	}
+	public ModelAndView resources(HttpServletRequest arg0, HttpServletResponse arg1) throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("=======springmvc======");
+		String method = "resources";
+		return new ModelAndView("resources","method",method);
+	}
 }
